@@ -1,0 +1,133 @@
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+body{
+	background-color: #f1f1f1;
+}
+.container {
+	/*移除下面兩行，變成full screen*/
+	/*width: 80%;*/
+	/*max-width: 1200px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.site-header{
+	background-color: #30A9DE;
+}
+
+/*second header*/
+.site-header-2{
+	background-color: red;
+}
+
+.site-header-inner{
+	height: 100px;
+}
+.site-footer {
+	background-color: #607D8B;
+}
+.site-footer-inner{
+	height: 100px;
+}
+.site-main {
+	background-color: #fff;
+}
+.site-main-inner::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*------------------------雙欄情況------------------------*/
+/*html檔中(第一個)content*/
+.content{
+	/*height: 1000px;*/
+	width: 75%;
+	float: left;
+	background-color: #F5DEB3;
+	padding-left:20px;
+}
+/*html檔中(第一個)sidebar*/
+.sidebar{
+	height: 1000px;
+	width: 25%;
+	float: left;	
+	background-color: #f1f1f1;
+}
+/*-------------------------------------------------------------*/
+
+
+
+/*---content---*/
+.content-h1{
+	padding: 30px 10px 10px 10px;
+	font-size: 18px;
+	font-family: Microsoft JhengHei;
+	color: 	#842B00;
+}
+
+.content-t1{
+	padding: 2px 30px;
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+	color: #000000;
+}
+
+.content-t2{
+	padding: 2px 60px;
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+	color: #000000;
+}
+
+.content-ps{
+	padding: 2px 30px;
+	font-size: 14px;
+	font-family: Microsoft JhengHei;
+	color: #000000;
+}
+
+.small-picture {
+	max-width: 25%;
+	height: auto;
+	float: left;
+	padding: 10px 5px;
+}
+
+.video {
+	width: 100%;
+	/*height: 300px; /*will be removed*/
+	/*background-color: green;*/
+}
+
+.product {
+	width: 100%;
+	/*height: 400px; /*will be removed*/
+	/*background-color: blue;*/
+}
+
+.contact {
+	width: 100%;
+	height: 100px; /*will be removed*/
+	/*background-color: yellow;*/
+}
+
+.payInfo {
+	width: 100%;
+	/*height: 100px; /*will be removed*/
+	/*background-color: pink;*/
+}
+
+.storeInfo {
+	width: 100%;
+	height: 100px; /*will be removed*/
+	/*background-color: purple;*/
+}
+
+.content-bottom {
+	width: 100%;
+	height: 100px; /*will be removed*/
+	/*background-color: purple;*/
+}

@@ -1,0 +1,45 @@
+.form-item {
+	margin-bottom: 15px;
+}
+
+.form-item label {
+	margin-bottom: 5px;
+	display: block;
+}
+
+.form-element{
+	width: 100%;
+	border: 1px solid #C24C13;
+	padding: 4px 10px;
+}
+
+.button{
+	font-weight: 400;
+	font-size: large;
+	padding:4px 10px;
+	display:inline-block;
+	border: 2px solid #C24C13;
+	color: #C24C13;
+	background-color: transparent;
+}
+
+.button-blue{
+	background-color: rgb(17, 165, 213);
+}
+
+.button:hover{
+	cursor: pointer;
+	background-color: #C24C13;
+	color: white;
+}
+
+.form-title{
+	padding-bottom: 0;
+	color: #C24C13;
+	font-weight: 500;
+}
+
+.form-text{
+	color: #3e3e3e;
+	font-weight: 400;
+}

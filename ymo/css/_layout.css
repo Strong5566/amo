@@ -1,0 +1,182 @@
+/*頁面版型布局*/
+
+/*container*/
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.container:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.site-main {
+	/*background-color: #fff;/*white*/
+	position: relative;
+	z-index: 1;
+	background-color: #EFCF94;
+	padding: 20px;
+}
+
+.site-main-inner{
+	/*background-color: white;*/
+	margin-top: 20px;
+}
+
+.site-main-inner::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.site-main-dark{
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.news-box{
+	padding: 15px 15px;
+}
+
+.news-box a{
+	color:#595656;
+}
+
+.mind{
+	max-width: 60%;
+	margin-left: auto;;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.light-dashed{
+		border-bottom: dashed aliceblue;
+}
+
+.dark-dashed{
+	border-bottom: dotted gray;
+}
+
+.content-one{
+	/*height: 1000px;*/
+	width: 100%;
+	/*background-color: #F5DEB3;*/
+	/*padding:10px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right-box{
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+.right-box:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.map{
+	width: 100%;
+	border: 0;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.map:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+@media (min-width: 768px){
+/*大於768px螢幕的CSS樣式*/
+/*min-width: 768px-->此媒介至少寬有768px時*/
+	.container {
+		width: 720px;
+	}
+
+	.right-box{
+		/*float: left;*/
+		display: inline-block;
+		width: 40%;
+		left: 0px;
+	}
+
+	.map{
+		/*float: right;*/
+		display: inline-block;
+		width: 55%;
+		left: 0px;
+	}
+}
+
+@media (min-width: 992px){
+/*大於992px螢幕的CSS樣式*/
+/*min-width: 992px-->此媒介至少寬有992px時*/
+	.container {
+		width: 920px;
+	}
+	.map{
+		width: 50%;
+	}
+
+
+}
+
+@media (min-width: 1280px){
+/*大於1200px螢幕的CSS樣式*/
+/*min-width: 1200px-->此媒介至少寬有1200px時*/
+	.container {
+		width: 1100px;
+	}
+
+	/*.map{
+		width: 40%;
+	}*/
+}
+
+/*content & sidebar*/
+/*.content, .sidebar {
+	height: 500px;
+}*/
+
+@media (min-width: 768px){
+/*大於768px螢幕的CSS樣式*/
+/*min-width: 768px-->此媒介至少寬有768px時*/
+	.content {
+		width: 65%;
+		float: left;
+	}
+
+	.sidebar {
+		width: 35%;
+		float: left;
+	}
+
+	.sidebar ~ .sidebar{
+		float: right;
+	}
+
+	.sidebar + .content{
+		width: 65%;
+		border-left: dashed aliceblue;
+		float: left;
+	}
+
+	.content: last-child {
+		width: 68% /*修正雙欄*/
+	}
+
+	.content: only-child {
+		width: 100%;
+	}
+}

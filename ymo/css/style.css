@@ -1,0 +1,266 @@
+/*基本網站標題樣式*/
+
+@import url(_global.css);
+@import url(_layout.css);
+@import url(_nav.css);
+@import url(_helper.css);
+@import url(_grid.css);
+@import url(_form.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+.site-header{
+	/*只控制跟隨捲動的header*/
+
+	position: fixed; /*控制跟隨捲動*/
+	width: 100%;
+	z-index: 99; /*不設99會被蓋掉*/
+	/*position: relative;*/
+	top:0;
+	left:0;
+}
+
+/*.dark-bg {
+	background-color: #000;
+	color: #fff;
+}
+
+.dark-bg a {
+	color: #fff;
+}
+
+.dark-bg a:hover {
+	color: rgba(255,255,255,.6);
+}
+=>move to _helper.css
+*/
+
+.site-header-inner{
+	/*兩種header皆控制*/
+	/*刪除以下*/
+	/*height: 100px;
+	/*background-color: red;*/
+}
+
+.add {
+	/*只控制不跟隨捲動的header*/
+	height: 100px;
+	/*background-color: red;*/
+}
+
+.site-logo {
+	/*設定位置*/
+	/*position: absolute;
+	top: 10px;
+	left: 10px;*/
+	/*right: 0;
+	bottom: 0;*/
+	padding-top: 10px;
+
+	/*設定樣式*/
+	/*color: #fff;*/
+	text-transform: uppercase;
+	font-weight: 800;
+	float: left;/*浮動起來讓logo的下一列元素橫排在右邊*/
+}
+
+/*---content---*/
+.content-h1-red{
+	padding: 30px 0px 10px 0px;
+	font-size: 22px;
+	/*font-family: Microsoft JhengHei;*/
+	color: 	#842B00;
+	font-weight: bolder;
+}
+
+.content-h2-red{
+	padding: 5px 0px 5px 0px;
+	font-size: 18px;
+	/*font-family: Microsoft JhengHei;*/
+	font-weight: 500;
+	color: 	#C24C13;
+}
+
+.content-h1-blue{
+	padding: 30px 0px 10px 0px;
+	font-size: 22px;
+	/*font-family: Microsoft JhengHei;*/
+	color: 	#247a9e;
+	font-weight: bolder;
+}
+
+.content-h2-blue{
+	padding: 30px 0px 10px 0px;
+	font-size: 18px;
+	/*font-family: Microsoft JhengHei;*/
+	font-weight: 500;
+	color: 	#247a9e;
+}
+
+.content-t1{
+	padding: 2px 0px;
+	font-size: 16px;
+	/*font-family: Microsoft JhengHei;*/
+	color: #000000;
+}
+
+.content-t2{
+	padding: 2px 60px;
+	font-size: 16px;
+	/*font-family: Microsoft JhengHei;*/
+	color: #000000;
+}
+
+.content-t1-fade{
+	padding: 2px 0px;
+	font-size: 14px;
+	/*font-family: Microsoft JhengHei;*/
+	color: gray;
+}
+
+.content-t1-important{
+	padding: 2px 0px;
+	font-size: 16px;
+	/*font-family: Microsoft JhengHei;*/
+	color: #e45b10;
+}
+
+.content-ps{
+	padding: 2px 0px;
+	font-size: 14px;
+	/*font-family: Microsoft JhengHei;*/
+	color: #000000;
+}
+
+.small-picture {
+	max-width: 50%;
+	width: 45%;
+	height: auto;
+	float: left;
+	padding: 10px 15px;
+}
+
+.video {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	/*height: 300px; /*will be removed*/
+	/*background-color: green;*/
+}
+
+.product {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	/*height: 400px; /*will be removed*/
+	/*background-color: blue;*/
+}
+
+.contact {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	/*background-color: yellow;*/
+}
+
+.payInfo {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	/*height: 100px; /*will be removed*/
+	/*background-color: pink;*/
+}
+
+.storeInfo {
+	width: 100%;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
+	/*height: 100px;
+	/*background-color: purple;*/
+}
+
+.content-bottom {
+	width: 100%;
+	padding-left: 30px;
+	height: auto; /*will be removed*/
+	/*background-color: purple;*/
+}
+
+.content-bottom::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.info{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*小螢幕時選單跑到下一行*/
+@media (max-width: 992px) {
+/*小於992px螢幕的CSS樣式*/
+	.site-menu {
+		/*可左右滑動的小螢幕選單*/
+		white-space: nowrap;
+		width: 100%;
+		overflow: auto;
+	}
+}
+
+.site-header-toggle,
+.site-menu .nav-link {
+	margin: 40px auto;;
+}
+
+.site-banner img {
+	margin-top: -15px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-height: 300px;
+	max-width: 800px;
+}
+
+.site-footer {
+	background-color: #607D8B;
+	color:white;
+	position: relative;
+	z-index: 1;
+}
+
+.site-footer a{
+	color:#aac4db;
+}
+
+
+.site-footer-dark {
+	background-color: #235269;
+	color: rgb(200, 222, 245);
+	position: relative;
+	z-index: 1;
+}
+
+.site-footer-dark a{
+	color: rgb(98, 169, 239);
+}
+
+.site-footer-inner{
+	/*刪除*/
+	/*height: 100px;*/
+	padding:10px;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.site-footer .nav {
+		width: 100%;
+		/*float: left;*/
+	}
+}
