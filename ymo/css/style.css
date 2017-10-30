@@ -6,7 +6,7 @@
 @import url(_helper.css);
 @import url(_grid.css);
 @import url(_form.css);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 .site-header{
 	/*只控制跟隨捲動的header*/
